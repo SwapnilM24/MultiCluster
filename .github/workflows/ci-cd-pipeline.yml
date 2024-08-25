@@ -53,4 +53,4 @@ jobs:
       - name: Trivy Scan
         run: |
           docker pull your-docker-repo/your-app:${{ github.sha }}
-          trivy image --severity HIGH,CRITICAL your-docker-repo/your-app:${{ github.sha }}
+          trivy image --severity HIGH,CRITICAL swapi123:${{ github.sha }}
